@@ -1,3 +1,11 @@
+body, html {
+  width: 100%;
+  height: 100%; }
 
+#logo {
+  margin: 200px 0px; }
+
+.list-group {
+  width: 80%; }
 
 /*# sourceMappingURL=style.css.map */
