@@ -32,10 +32,10 @@ $(document).ready(function(){
 
   $(".sfVid").background({
     source: {
-        poster: "img/poster.png"
-        // webm: "img/sanfrancisco.webm",
-        // mp4: "img/sanfrancisco.mp4",
-        // ogg: "img/sanfrancisco.ogg"
+        poster: "img/poster.png",
+        webm: "img/sanfrancisco.webm",
+        mp4: "img/sanfrancisco.mp4",
+        ogg: "img/sanfrancisco.ogg"
     }
   });
 });
