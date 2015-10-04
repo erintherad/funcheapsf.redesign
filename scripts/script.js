@@ -2,13 +2,32 @@ $(document).ready(function(){
 
 	$('.features').slick({
     centerMode: true,
-    infinite: true,
     centerPadding: '60px',
     slidesToShow: 3,
-    slidesToScroll: 1,
     focusOnSelect: true,
-    initialSlide: 1,
-    mobileFirst: true,
+    adaptiveHeight: true,
+    responsive: [
+    {
+      breakpoint: 868,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1,
+        adaptiveHeight: true
+      }
+    },
+    {
+      breakpoint: 380,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1,
+        adaptiveHeight: true
+      }
+    }
+  ]
   });
 
   $(".sfVid").background({
