@@ -38,4 +38,6 @@ $(document).ready(function(){
         ogg: "img/sanfrancisco.ogg"
     }
   });
+
+  $('#datetimepicker1').datetimepicker();
 });

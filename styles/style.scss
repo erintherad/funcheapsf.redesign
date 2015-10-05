@@ -2,9 +2,19 @@ $transparent-black-3: rgba(0,0,0,0.3);
 $transparent-black-5: rgba(0,0,0,0.5);
 $transparent-white-3: rgba(255, 255, 255, 0.3);
 
+@font-face {
+	font-family: openSans;
+	src: url(OpenSans-CondLight.ttf);
+}
+@font-face {
+	font-family: openSansBold;
+	src: url(OpenSans-CondBold.ttf);
+}
+
 body, html {
 	width: 100%;
 	height: 100%;
+	font-family: openSans;
 }
 
 .sfVid {
@@ -30,6 +40,7 @@ body, html {
   padding: 20px 0px;	
   background-color: $transparent-black-3;
   font-size: 4em;
+  font-family: openSansBold;
 }
 
 .list-header {
@@ -39,6 +50,7 @@ body, html {
 	background-color: $transparent-black-5;
 	margin: 0px;
 	border-bottom: 1px solid $transparent-white-3;
+	font-family: openSansBold;
 }
 
 
@@ -49,6 +61,7 @@ body, html {
 	margin: 0px 20px;
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.8);
 	padding: 0px;
+	font-size: 1.4em;
 	ul {
 		list-style-type: none;
 		padding-left: 0;

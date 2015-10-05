@@ -9,6 +9,10 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css" rel="stylesheet"/>
 	<!-- slick carousel theme -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"/>
+	<!-- bootstrap datepicker css -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker.min.css">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<!-- Optional theme -->
@@ -38,14 +42,27 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Upcoming Events</a></li>
-					<li><a href="#">Free</a></li>
-					<li><a href="#">Weekend</a></li>
 					<li><a href="#">Win Stuff</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-plus-sign"></span>Add Your Event</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-plus-sign"></span> Add Your Event</a></li>
 					<form class="navbar-form navbar-nav navbar-right" role="search">
 						<div class="form-group">
 							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<div class="form-group">
+							<div class='input-group date' id='datetimepicker1'>
+								<input type='text' class="form-control" />
+								<span class="input-group-addon">
+									<span class="glyphicon glyphicon-calendar"></span>
+								</span>
+							</div>
+						</div>
+						<div class="form-group">
+							<select class="form-control" id="sel1">
+								<option>Upcoming Events</option>
+								<option>Free</option>
+								<option>Weekend</option>
+								<option>Today</option>
+							</select>
 						</div>
 						<button type="submit" class="btn btn-default">Submit</button>
 					</form>
@@ -122,17 +139,123 @@
 			</div>
 		</div>
 	</div>
+	<div class="container content">
+		<div class="row">
+			<h3>WHAT'S HAPPENING TODAY:</h3>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="col-md-4">
+					<a href="javascript:void(0)">
+						<img class="img-responsive" src="img/today_1.jpg" alt="">
+						<div>Example 1</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="javascript:void(0)">
+						<img class="img-responsive" src="img/today_2.jpg" alt="">
+						<div>Example 2</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="javascript:void(0)">
+						<img class="img-responsive" src="img/today_3.jpg" alt="">
+						<div>Example 3</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<h3>OR SEARCH BY CATEGORY:</h3>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<i class="fa fa-paint-brush fa-5x"></i>
+				<h4>Art & Museums</h4>
+			</div>
+			<div class="col-md-3">
+				<i class="fa fa-users fa-5x"></i>
+				<h4>Charities & Volunteering</h4>
+			</div>
+			<div class="col-md-3">
+				<i class="fa fa-headphones fa-5x"></i>
+				<h4>Club & DJ</h4>
+			</div>
+			<div class="col-md-3">
+				<i class="fa fa-smile-o fa-5x"></i>
+				<h4>Comedy</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<i class="fa fa-cutlery fa-5x"></i>
+				<h4>Eating & Drinking</h4>
+			</div>
+			<div class="col-md-3">
+				<i class="fa fa-street-view fa-5x"></i>
+				<h4>Fairs & Festivals</h4>
+			</div>
+			<div class="col-md-3">
+				<i class="fa fa-gift fa-5x"></i>
+				<h4>Free Stuff</h4>
+			</div>
+			<div class="col-md-3">
+				<i class="fa fa-gamepad fa-5x"></i>
+				<h4>Fun & Games</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<i class="fa fa-hand-spock-o fa-5x"></i>
+				<h4>Geek Event</h4>
+			</div>
+			<div class="col-md-3">
+				<i class="fa fa-child fa-5x"></i>
+				<h4>Kids & Families</h4>
+			</div>
+			<div class="col-md-3">
+				<i class="fa fa-graduation-cap fa-5x"></i>
+				<h4>Lectures & Workshops</h4>
+			</div>
+			<div class="col-md-3">
+				<i class="fa fa-book fa-5x"></i>
+				<h4>Literature</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<i class="fa fa-music fa-5x"></i>
+				<h4>Live Music</h4>
+			</div>
+			<div class="col-md-3">
+				<i class="fa fa-film fa-5x"></i>
+				<h4>Movies</h4>
+			</div>
+			<div class="col-md-3">
+				<i class="fa fa-shopping-cart fa-5x"></i>
+				<h4>Shopping & Fashion</h4>
+			</div>
+			<div class="col-md-3">
+				<i class="fa fa-bullhorn fa-5x"></i>
+				<h4>Sports & Fitness</h4>
+			</div>
+		</div>
+	</div>
 
 	<!-- JQuery 2.x CDN -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<!-- slick jquery -->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+	<!-- moment js -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment-with-locales.min.js"></script>
 	<!-- formstone core jquery -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/formstone/0.8.18/js/core.js"></script>
 	<!-- formstone background jquery -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/formstone/0.8.18/js/background.js"></script>
 	<!-- formstone transition jquery -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/formstone/0.8.18/js/transition.js"></script>
+	<!-- bootstrap datepicker js -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<!-- Custom js sheet -->

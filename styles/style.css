@@ -1,6 +1,13 @@
+@font-face {
+  font-family: openSans;
+  src: url(OpenSans-CondLight.ttf); }
+@font-face {
+  font-family: openSansBold;
+  src: url(OpenSans-CondBold.ttf); }
 body, html {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  font-family: openSans; }
 
 .sfVid {
   position: absolute;
@@ -21,7 +28,8 @@ body, html {
   color: white;
   padding: 20px 0px;
   background-color: rgba(0, 0, 0, 0.3);
-  font-size: 4em; }
+  font-size: 4em;
+  font-family: openSansBold; }
 
 .list-header {
   color: white;
@@ -29,7 +37,8 @@ body, html {
   padding: 20px 15px;
   background-color: rgba(0, 0, 0, 0.5);
   margin: 0px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: openSansBold; }
 
 .feature {
   transition: all .2s ease-in-out;
@@ -37,7 +46,8 @@ body, html {
   background-color: rgba(0, 0, 0, 0.3);
   margin: 0px 20px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
-  padding: 0px; }
+  padding: 0px;
+  font-size: 1.4em; }
   .feature ul {
     list-style-type: none;
     padding-left: 0; }
