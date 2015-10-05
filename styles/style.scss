@@ -1,3 +1,7 @@
+$transparent-black-3: rgba(0,0,0,0.3);
+$transparent-black-5: rgba(0,0,0,0.5);
+$transparent-white-3: rgba(255, 255, 255, 0.3);
+
 body, html {
 	width: 100%;
 	height: 100%;
@@ -24,50 +28,51 @@ body, html {
 	margin: 100px 0px;
 	color: white;
   padding: 20px 0px;	
-  background-color: rgba(0,0,0,0.3);
+  background-color: $transparent-black-3;
   font-size: 4em;
-}
-
-ul.item {
-	list-style-type: none;
-	padding-left: 0;
-}
-
-li.item {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-	padding: 15px 45px;
-}
-li:hover {
-	background-color: rgba(0,0,0,0.5);
-	color: white;
-}
-
-a.item {
-	text-decoration: none;
-	color: rgba(255, 255, 255, 0.6);
-}
-
-a.item:hover {
-	color: rgba(255, 255, 255, 1);
 }
 
 .list-header {
 	color: white;
 	text-align: center;
 	padding: 20px 15px;
-	background-color: rgba(0,0,0,0.5);
+	background-color: $transparent-black-5;
 	margin: 0px;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	border-bottom: 1px solid $transparent-white-3;
 }
 
 
 .feature { 
 	transition: all .2s ease-in-out; 
 	width: 80%;
-	background-color: rgba(0,0,0,0.3);
+	background-color: $transparent-black-3;
 	margin: 0px 20px;
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.8);
 	padding: 0px;
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+	}
+	li {
+		border-bottom: 1px solid $transparent-black-3;
+		padding: 15px 45px;
+	}
+	li:hover {
+		background-color: $transparent-black-5;
+		color: white;
+	}
+
+	a {
+		text-decoration: none;
+		color: rgba(255, 255, 255, 0.6);
+	}
+
+	a:hover {
+		color: white;
+	}
+	a:focus {
+		outline: none;
+	}
 }
 
 .feature:hover {
