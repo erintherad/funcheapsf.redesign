@@ -50,6 +50,32 @@ body, html {
 #logo-color {
 	color: $yellow;
 }
+.glyphicon-plus-sign {
+	color: $yellow;
+}
+
+.navbar-custom {
+	background-color: $transparent-black-5;
+	a {
+		color: white;
+	}
+	a:hover {
+		background-color: $transparent-white-3;
+		color: black;
+	}
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0;
+}
+
+input.form-control {
+	border-radius: 0;
+}
+
+select#sel1 {
+	border-radius: 0;
+}
 
 .list-header {
 	color: white;
@@ -111,6 +137,14 @@ body, html {
 	width: 80%;
 }
 
+button.btn-go {
+		background-color: $yellow; 
+		border-radius: 0;
+	}
+	button.btn-go:focus {
+		outline: none;
+	}
+
 .today-content {
 	margin: 100px 0px;
 	h3 {
@@ -140,12 +174,8 @@ body, html {
 		margin: 50px 0px;
 		color: white;
 	}
-	button.btn-go {
-		background-color: $yellow; 
-		border-radius: 0;
-	}
-	button.btn-go:focus {
-		outline: none;
+	.img-responsive:hover {
+		background-color: $transparent-black-3;
 	}
 }
 

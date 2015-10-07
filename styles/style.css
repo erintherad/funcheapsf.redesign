@@ -36,6 +36,26 @@ body, html {
 #logo-color {
   color: #ffaa00; }
 
+.glyphicon-plus-sign {
+  color: #ffaa00; }
+
+.navbar-custom {
+  background-color: rgba(0, 0, 0, 0.5); }
+  .navbar-custom a {
+    color: white; }
+  .navbar-custom a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black; }
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  margin-left: 0; }
+
+input.form-control {
+  border-radius: 0; }
+
+select#sel1 {
+  border-radius: 0; }
+
 .list-header {
   color: white;
   text-align: center;
@@ -82,6 +102,13 @@ body, html {
 .panel {
   width: 80%; }
 
+button.btn-go {
+  background-color: #ffaa00;
+  border-radius: 0; }
+
+button.btn-go:focus {
+  outline: none; }
+
 .today-content {
   margin: 100px 0px; }
   .today-content h3 {
@@ -106,11 +133,8 @@ body, html {
   .today-content button {
     margin: 50px 0px;
     color: white; }
-  .today-content button.btn-go {
-    background-color: #ffaa00;
-    border-radius: 0; }
-  .today-content button.btn-go:focus {
-    outline: none; }
+  .today-content .img-responsive:hover {
+    background-color: rgba(0, 0, 0, 0.3); }
 
 .search-content {
   position: relative;
