@@ -77,4 +77,41 @@ body, html {
 .panel {
   width: 80%; }
 
+.today-content {
+  margin: 100px 0px; }
+  .today-content h3 {
+    margin-bottom: 50px;
+    font-family: openSansBold; }
+  .today-content h3.img-content {
+    position: absolute;
+    top: 33%;
+    left: 33%;
+    color: white;
+    transition: all .2s ease-in-out; }
+  .today-content h3.img-content:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 100; }
+  .today-content .img-responsive {
+    position: relative; }
+
+.search-content {
+  margin: 0 auto; }
+  .search-content h3 {
+    margin-bottom: 50px;
+    font-family: openSansBold; }
+  .search-content .col-md-3 {
+    margin: 20px 0px; }
+  .search-content a {
+    text-decoration: none;
+    color: black; }
+  .search-content i {
+    transition: all .2s ease-in-out; }
+  .search-content i:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 100; }
+
 /*# sourceMappingURL=style.css.map */

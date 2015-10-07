@@ -102,3 +102,51 @@ body, html {
 .panel {
 	width: 80%;
 }
+
+.today-content {
+	margin: 100px 0px;
+	h3 {
+		margin-bottom: 50px;
+		font-family: openSansBold;
+	}
+	h3.img-content {
+		position: absolute;
+		top: 33%;
+		left: 33%;
+		color: white;
+		transition: all .2s ease-in-out; 
+	}
+	h3.img-content:hover {
+		-webkit-transform: scale(1.1);
+	  -ms-transform: scale(1.1);
+	  transform: scale(1.1);
+	  z-index: 100;
+	}
+	.img-responsive {
+		position: relative;
+	}
+}
+
+.search-content {
+	margin: 0 auto;
+	h3 {
+		margin-bottom: 50px;
+		font-family: openSansBold;
+	}
+	.col-md-3 {
+		margin: 20px 0px;
+	}
+	a {
+		text-decoration: none;
+		color: black;
+	}
+	i{
+		transition: all .2s ease-in-out; 
+	}
+	i:hover {
+		-webkit-transform: scale(1.1);
+	  -ms-transform: scale(1.1);
+	  transform: scale(1.1);
+	  z-index: 100;
+	}
+}
