@@ -26,7 +26,7 @@ body, html {
   margin-bottom: 200px; }
 
 #logo {
-  margin: 15% 0;
+  margin: 20% 0;
   color: white;
   padding: 20px 0px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -126,7 +126,9 @@ button.btn-go:focus {
     left: 0;
     right: 0;
     margin: auto;
-    color: white; }
+    color: white;
+    font-family: openSansBold;
+    text-shadow: 1px 1px 3px black; }
   .today-content .img-responsive {
     position: relative; }
   .today-content button {
