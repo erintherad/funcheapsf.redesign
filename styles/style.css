@@ -7,7 +7,9 @@
 body, html {
   width: 100%;
   height: 100%;
-  font-family: openSans; }
+  font-family: openSans;
+  background-color: #EDEFED;
+  color: #565A5C; }
 
 .sfVid {
   position: absolute;
@@ -24,12 +26,15 @@ body, html {
   margin-bottom: 200px; }
 
 #logo {
-  margin: 100px 0px;
+  margin: 200px 0px;
   color: white;
   padding: 20px 0px;
   background-color: rgba(0, 0, 0, 0.3);
   font-size: 4em;
   font-family: openSansBold; }
+
+#logo-color {
+  color: #ffaa00; }
 
 .list-header {
   color: white;
@@ -44,7 +49,7 @@ body, html {
   transition: all .2s ease-in-out;
   width: 80%;
   background-color: rgba(0, 0, 0, 0.3);
-  margin: 0px 20px;
+  margin: 0px 40px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
   padding: 0px;
   font-size: 1.4em; }
@@ -56,12 +61,12 @@ body, html {
     padding: 15px 45px; }
   .feature li:hover {
     background-color: rgba(0, 0, 0, 0.5);
-    color: white; }
+    color: #ffaa00; }
   .feature a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6); }
   .feature a:hover {
-    color: white; }
+    color: #ffaa00; }
   .feature a:focus {
     outline: none; }
 
@@ -85,19 +90,31 @@ body, html {
   .today-content h3.img-content {
     position: absolute;
     top: 33%;
-    left: 33%;
+    left: 0;
+    right: 0;
+    margin: auto;
     color: white;
     transition: all .2s ease-in-out; }
   .today-content h3.img-content:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
-    z-index: 100; }
+    z-index: 100;
+    color: #ffaa00; }
   .today-content .img-responsive {
     position: relative; }
+  .today-content button {
+    margin: 50px 0px;
+    color: white; }
+  .today-content button.btn-go {
+    background-color: #ffaa00;
+    border-radius: 0; }
+  .today-content button.btn-go:focus {
+    outline: none; }
 
 .search-content {
-  margin: 0 auto; }
+  position: relative;
+  margin: 100px 0px; }
   .search-content h3 {
     margin-bottom: 50px;
     font-family: openSansBold; }
@@ -105,13 +122,38 @@ body, html {
     margin: 20px 0px; }
   .search-content a {
     text-decoration: none;
-    color: black; }
+    color: #565A5C; }
   .search-content i {
-    transition: all .2s ease-in-out; }
+    transition: all .2s ease-in-out;
+    color: #565A5C; }
   .search-content i:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
-    z-index: 100; }
+    z-index: 100;
+    color: #ffaa00; }
+
+.bottom-row {
+  margin-bottom: 100px; }
+
+.email-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  padding: 60px 0px;
+  background-color: #ffaa00; }
+  .email-content h3 {
+    font-family: openSansBold;
+    margin-bottom: 30px;
+    color: black; }
+
+footer {
+  background-color: #EDEFED;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin: 50px 0px; }
 
 /*# sourceMappingURL=style.css.map */

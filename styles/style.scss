@@ -1,6 +1,9 @@
 $transparent-black-3: rgba(0,0,0,0.3);
 $transparent-black-5: rgba(0,0,0,0.5);
 $transparent-white-3: rgba(255, 255, 255, 0.3);
+$background: #EDEFED;
+$main-text: #565A5C;
+$yellow: #ffaa00;
 
 @font-face {
 	font-family: openSans;
@@ -15,6 +18,8 @@ body, html {
 	width: 100%;
 	height: 100%;
 	font-family: openSans;
+	background-color: $background;
+	color: $main-text;
 }
 
 .sfVid {
@@ -35,12 +40,15 @@ body, html {
 }
 
 #logo {
-	margin: 100px 0px;
+	margin: 200px 0px;
 	color: white;
   padding: 20px 0px;	
   background-color: $transparent-black-3;
   font-size: 4em;
   font-family: openSansBold;
+}
+#logo-color {
+	color: $yellow;
 }
 
 .list-header {
@@ -58,7 +66,7 @@ body, html {
 	transition: all .2s ease-in-out; 
 	width: 80%;
 	background-color: $transparent-black-3;
-	margin: 0px 20px;
+	margin: 0px 40px;
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.8);
 	padding: 0px;
 	font-size: 1.4em;
@@ -72,7 +80,7 @@ body, html {
 	}
 	li:hover {
 		background-color: $transparent-black-5;
-		color: white;
+		color: $yellow;
 	}
 
 	a {
@@ -81,7 +89,7 @@ body, html {
 	}
 
 	a:hover {
-		color: white;
+		color: $yellow;
 	}
 	a:focus {
 		outline: none;
@@ -112,7 +120,9 @@ body, html {
 	h3.img-content {
 		position: absolute;
 		top: 33%;
-		left: 33%;
+		left: 0;
+		right: 0;
+		margin: auto;
 		color: white;
 		transition: all .2s ease-in-out; 
 	}
@@ -121,14 +131,27 @@ body, html {
 	  -ms-transform: scale(1.1);
 	  transform: scale(1.1);
 	  z-index: 100;
+	  color: $yellow;
 	}
 	.img-responsive {
 		position: relative;
 	}
+	button {
+		margin: 50px 0px;
+		color: white;
+	}
+	button.btn-go {
+		background-color: $yellow; 
+		border-radius: 0;
+	}
+	button.btn-go:focus {
+		outline: none;
+	}
 }
 
 .search-content {
-	margin: 0 auto;
+	position: relative;
+	margin: 100px 0px;
 	h3 {
 		margin-bottom: 50px;
 		font-family: openSansBold;
@@ -138,15 +161,44 @@ body, html {
 	}
 	a {
 		text-decoration: none;
-		color: black;
+		color: $main-text;
 	}
 	i{
 		transition: all .2s ease-in-out; 
+		color: $main-text;
 	}
 	i:hover {
 		-webkit-transform: scale(1.1);
 	  -ms-transform: scale(1.1);
 	  transform: scale(1.1);
 	  z-index: 100;
+	  color: $yellow;
 	}
+}
+.bottom-row {
+	margin-bottom: 100px;
+}
+
+.email-content {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100%;
+	padding: 60px 0px;
+	background-color: $yellow;
+	h3 {
+		font-family: openSansBold;
+		margin-bottom: 30px;
+		color: black;
+	}
+}
+
+footer {
+	background-color: $background;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100%;
+	margin: 50px 0px;
+
 }
